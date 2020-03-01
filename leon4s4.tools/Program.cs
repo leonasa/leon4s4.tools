@@ -1,6 +1,4 @@
-﻿using leon4s4.tools.SelfHostWebApi;
-
-namespace leon4s4.tools
+﻿namespace leon4s4.tools
 {
     internal class Program
     {

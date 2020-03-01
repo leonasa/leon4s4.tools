@@ -44,6 +44,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SampleSimpleInjector\IScenarioReader.cs" />
+    <Compile Include="SampleSimpleInjector\IScenarioReaderFactory.cs" />
+    <Compile Include="SampleSimpleInjector\ScenarioReader.cs" />
+    <Compile Include="SampleSimpleInjector\ScenarioReaderFactory.cs" />
+    <Compile Include="SampleSimpleInjector\TrafficJsonReader.cs" />
     <Compile Include="SelfHostWebApi\Configuration.cs" />
     <Compile Include="HttpClient\CustomWebClient.cs" />
     <Compile Include="Program.cs" />
