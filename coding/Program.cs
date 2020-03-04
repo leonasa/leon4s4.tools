@@ -1,9 +1,40 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 
 namespace coding
 {
+    public class HackerRank
+    {
+        public static long RepeatedStringTooLongToRun(string s, long n)
+        {
+            var sLength = s.Length;
+            long count = 0;
+            long countTotalOfA = 0;
+            var index = 0;
+            while (count < n)
+            {
+                countTotalOfA += s[index] == 'a' ? 1 : 0;
+                index = index >= sLength - 1 ? 0 : index + 1;
+                count++;
+            }
+            
+            return countTotalOfA;
+        }
+
+        public static long RepeatedString(string s, long n)
+        {
+            var countA = s.Count(a => a == 'a');
+            
+            if (countA == s.Length)
+                return n;
+            
+            return countA;
+        }
+
+       
+    }
     class Program
     {
         static void Main(string[] args)
