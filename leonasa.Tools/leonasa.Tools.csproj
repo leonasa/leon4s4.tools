@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Experimental.System.Messaging" Version="1.1.0" />
+      <PackageReference Include="log4net" Version="2.0.8" />
+      <PackageReference Include="Messaging" Version="1.0.0" />
+      <PackageReference Include="Microsoft.Owin.Host.SystemWeb" Version="4.1.0" />
+      <PackageReference Include="Microsoft.Owin.Hosting" Version="4.1.0" />
+      <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
+      <PackageReference Include="Owin" Version="1.0.0" />
+      <PackageReference Include="OwinHost" Version="4.1.0" />
+      <PackageReference Include="SimpleInjector" Version="4.9.1" />
+      <PackageReference Include="SimpleInjector.Integration.Web" Version="4.9.1" />
+      <PackageReference Include="SimpleInjector.Integration.WebApi" Version="4.9.1" />
+      <PackageReference Include="System.Reactive" Version="4.3.2" />
+    </ItemGroup>
+
+</Project>
