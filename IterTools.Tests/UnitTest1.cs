@@ -18,6 +18,22 @@ namespace IterTools.Tests
         }
         
         [TestMethod]
+        public void DropWhile_Returns()
+        {
+            var expected = new List<int> {6,4,1};
+            var actual = EnumHelper.DropWhile(new List<int> {1,4,6,4,1}, i => i<5).ToList();
+            Assert.IsTrue(expected.SequenceEqual(actual));
+        }
+        
+        [TestMethod]
+        public void Cycle_Returns()
+        {
+            var expected = new List<string> {"A", "B", "C", "D","A", "B", "C", "D","A", "B", "C", "D","A", "B", "C", "D","A", "B", "C", "D"};
+            var actual = EnumHelper.Cycle(new List<string> {"A", "B", "C", "D"}).Take(20).ToList();
+            Assert.IsTrue(expected.SequenceEqual(actual));
+        }
+        
+        [TestMethod]
         public void Chain_Returns_Concatenation_Lists()
         {
             var actual = Tools.Chain(new List<int> {1,2,3,4,5}, new List<int> {6,7,8,9,10});

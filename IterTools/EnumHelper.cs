@@ -11,10 +11,42 @@ namespace IterTools
         {
             var enumerable = arr.ToList();
             var total = 0;
-            for (var i = 0; i < enumerable.Count; i++)
+            foreach (var t in enumerable)
             {
-                total = enumerable[i] + total;
+                total += t;
                 yield return total;
+            }
+        }  
+        
+        public static IEnumerable<T> DropWhile<T>(IEnumerable<T> arr, Func<T,bool> func)
+        {
+            using (var enumerator = arr.GetEnumerator())
+            {
+                while (enumerator.MoveNext())
+                {
+                    if (func(enumerator.Current))
+                        continue;
+                    
+                    yield return enumerator.Current;
+                    break;
+                }
+
+                while (enumerator.MoveNext())
+                {
+                    yield return enumerator.Current;
+                }
+            }
+        }
+
+        public static IEnumerable<T> Cycle<T>(IEnumerable<T> arr)
+        {
+            var enumerable = arr.ToList();
+            while (true)
+            {
+                foreach (var e in enumerable)
+                {
+                    yield return e;
+                }
             }
         }
         
