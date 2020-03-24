@@ -1,20 +1,66 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using FsCheck;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using IterTools;
 
 namespace IterTools.Tests
 {
     [TestClass]
     public class ToolsTests
     {
+        [TestMethod()]
+        public void GroupByUniq_AllEqualItems_Test()
+        {
+            var expected = new List<int> { 10 };
+            var actual = new List<int> { 10, 10, 10, 10, 10, 10 }.GroupByUniq().ToList();
+            Assert.IsTrue(expected.SequenceEqual(actual));
+        }
+        [TestMethod()]
+        public void GroupByUniq_NoItems_Test()
+        {
+            var expected = new List<int>();
+            var actual = new List<int>().GroupByUniq().ToList();
+            Assert.IsTrue(expected.SequenceEqual(actual));
+        }
+        [TestMethod()]
+        public void GroupByUniq_NoUnique_Test()
+        {
+            var expected = new List<int> { 10, 11, 12, 13, 14, 15 };
+            var actual = new List<int> { 10, 11, 12, 13, 14, 15 }.GroupByUniq().ToList();
+            Assert.IsTrue(expected.SequenceEqual(actual));
+        }
+
+        [TestMethod()]
+        public void GroupByUniq_Unique_Test()
+        {
+            var expected = new List<string> { "A", "B", "C", "D", "A", "B" };
+            var actual = new List<string> { "A", "A", "A", "A", "B", "B", "B", "C", "C", "D", "A", "A", "B", "B", "B" }.GroupByUniq();
+            Assert.IsTrue(expected.SequenceEqual(actual));
+        }
+
+        [TestMethod()]
+        public void AccumulatedTest()
+        {
+            var expected = new List<int> { 10, 21, 33, 46, 60, 75 };
+            var actual = new List<int> { 10, 11, 12, 13, 14, 15 }.Accumulated();
+            Assert.IsTrue(expected.SequenceEqual(actual));
+        }
+
         [TestMethod]
         public void Repeat_Returns_CorrectNumberOfItems()
         {
             var expected = 10;
             var actual = Tools.Repeat("a", expected).Count();
             Assert.AreEqual(expected, actual);
+        }
+        
+
+        [TestMethod]
+        public void IMap()
+        {
+            //var expected = 10;
+            //var actual = Tools.IMap("a", expected).Count();
+            //Assert.AreEqual(expected, actual);
         }
         
         [TestMethod]

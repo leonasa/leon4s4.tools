@@ -10,7 +10,7 @@ namespace CodingTests
         {
             int[] arr = {-1,1};
             var sum = arr.Sum();
-            var result = EnumHelper.Accumulated(arr).Take(arr.Length-1).Select(x => Math.Abs(2 * x - sum)).Min();
+            var result = arr.Accumulated().Take(arr.Length-1).Select(x => Math.Abs(2 * x - sum)).Min();
             
             var c = Convert.ToChar(1);
             Console.WriteLine(c == '1');

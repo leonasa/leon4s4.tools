@@ -1,14 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodingTests", "CodingTests\CodingTests.csproj", "{6FAC992B-C4DF-4E44-874F-32BFAA9FAB79}"
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodingTests", "CodingTests\CodingTests.csproj", "{6FAC992B-C4DF-4E44-874F-32BFAA9FAB79}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IterTools", "IterTools\IterTools.csproj", "{FA0702C9-F720-4094-918A-2EB1C6730CA8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IterTools", "IterTools\IterTools.csproj", "{FA0702C9-F720-4094-918A-2EB1C6730CA8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IterTools.Tests", "IterTools.Tests\IterTools.Tests.csproj", "{011DB9E8-D1A5-4BC6-A4D1-3F01A027554D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IterTools.Tests", "IterTools.Tests\IterTools.Tests.csproj", "{011DB9E8-D1A5-4BC6-A4D1-3F01A027554D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodingTests.Tests", "CodingTests.Tests\CodingTests.Tests.csproj", "{B478A103-9636-4D75-B9F5-F20ED2A29C8C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodingTests.Tests", "CodingTests.Tests\CodingTests.Tests.csproj", "{B478A103-9636-4D75-B9F5-F20ED2A29C8C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "leonasa.Tools", "leonasa.Tools\leonasa.Tools.csproj", "{CA60A0AA-15CC-4032-8BF5-E1B0E9977390}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "leonasa.Tools", "leonasa.Tools\leonasa.Tools.csproj", "{CA60A0AA-15CC-4032-8BF5-E1B0E9977390}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IterToolsTests", "IterToolsTests\IterToolsTests.csproj", "{61EA03F4-54AB-4484-9A13-898A6D7109CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,5 +41,15 @@ Global
 		{CA60A0AA-15CC-4032-8BF5-E1B0E9977390}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA60A0AA-15CC-4032-8BF5-E1B0E9977390}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA60A0AA-15CC-4032-8BF5-E1B0E9977390}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61EA03F4-54AB-4484-9A13-898A6D7109CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61EA03F4-54AB-4484-9A13-898A6D7109CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61EA03F4-54AB-4484-9A13-898A6D7109CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61EA03F4-54AB-4484-9A13-898A6D7109CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FE16B4AC-059F-4387-A951-C25CF7A90D6E}
 	EndGlobalSection
 EndGlobal
