@@ -10,7 +10,7 @@
       <PackageReference Include="Messaging" Version="1.0.0" />
       <PackageReference Include="Microsoft.Owin.Host.SystemWeb" Version="4.1.0" />
       <PackageReference Include="Microsoft.Owin.Hosting" Version="4.1.0" />
-      <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
       <PackageReference Include="Owin" Version="1.0.0" />
       <PackageReference Include="OwinHost" Version="4.1.0" />
       <PackageReference Include="SimpleInjector" Version="4.9.1" />
